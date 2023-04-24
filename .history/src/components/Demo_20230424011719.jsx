@@ -89,7 +89,7 @@ const Demo = () => {
             className='link_card'
             >
               <div className='copy_btn' onClick={() => handleCopy(item.url)}>
-                <img src={copied == item.url ? tick : copy}
+                <img src={copied }
                 alt='copy_icon'
                 className='w-[40%] h-[40%] object-contain'
                 />

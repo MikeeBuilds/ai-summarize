@@ -10,7 +10,6 @@ const Demo = () => {
    });
 
    const [allArticles, setAllArticles] = useState([]);
-   const [copied, setCopied] = useState("");
 
     const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
@@ -38,12 +37,6 @@ const Demo = () => {
 
         localStorage.setItem('articles', JSON.stringify(updatedAllArticles));
       }
-   }
-
-   const handleCopy = (copyUrl) => {
-    setCopied(copyUrl);
-    navigator.clipboard.writeText(copyUrl);
-    setTimeout(() => setArticle(false), 3000);
    }
 
 
@@ -88,8 +81,8 @@ const Demo = () => {
             onClick={() => setArticle(item)}
             className='link_card'
             >
-              <div className='copy_btn' onClick={() => handleCopy(item.url)}>
-                <img src={copied == item.url ? tick : copy}
+              <div className='copy_btn'>
+                <img src={copy}
                 alt='copy_icon'
                 className='w-[40%] h-[40%] object-contain'
                 />
@@ -121,7 +114,7 @@ const Demo = () => {
                       Article <span className='blue_gradient'>Summary</span>
                     </h2>
                     <div className='summary_box'>
-                      <p className='font-inter font-medium text-sm text-gray-700'>{article.summary}</p>
+                      <p className='font-inter font-medium'>{article.summary}</p>
                     </div>
                   </div>
                 )
