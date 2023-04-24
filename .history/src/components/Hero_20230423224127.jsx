@@ -22,11 +22,7 @@ const Hero = () => {
           OpenAI GPT-4
         </span>
       </h1>
-      <h2 className="desc">
-        Simplify your reading with Summize, an open-source article summarizer that
-        transforms lenghty articles into clear concise summaries
-         
-      </h2>
+      <h2></h2>
     </header>
   );
 };

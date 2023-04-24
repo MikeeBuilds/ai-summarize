@@ -23,9 +23,7 @@ const Hero = () => {
         </span>
       </h1>
       <h2 className="desc">
-        Simplify your reading with Summize, an open-source article summarizer that
-        transforms lenghty articles into clear concise summaries
-         
+        Summarize any article with the power of OpenAI's GPT-4 model. <br />
       </h2>
     </header>
   );

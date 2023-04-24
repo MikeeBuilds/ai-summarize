@@ -17,16 +17,11 @@ const Hero = () => {
       </nav>
 
       <h1 className="head_text">
-        Summarize Articles With <br className="max-md:hidden" />
+        Summarize Articles With <br className="" />
         <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
           OpenAI GPT-4
         </span>
       </h1>
-      <h2 className="desc">
-        Simplify your reading with Summize, an open-source article summarizer that
-        transforms lenghty articles into clear concise summaries
-         
-      </h2>
     </header>
   );
 };
