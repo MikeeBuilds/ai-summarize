@@ -29,10 +29,7 @@ const Demo = () => {
           type='url'
           placeholder='Paste your url link here...'
           value={article.url}
-          onChange={(e) => setArticle({
-            ...article,
-            url: e.target.value
-          })}
+          onChange={(e) => {}}
           required
           className="url_input peer"
           />

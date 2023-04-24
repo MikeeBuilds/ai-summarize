@@ -17,7 +17,7 @@ const Demo = () => {
       <div className='flex flex-col w-full gap-2'>
         <form 
             className='relative flex justify-center items-center' 
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmit
             >
           <img 
             src={linkIcon}
@@ -28,11 +28,8 @@ const Demo = () => {
           <input 
           type='url'
           placeholder='Paste your url link here...'
-          value={article.url}
-          onChange={(e) => setArticle({
-            ...article,
-            url: e.target.value
-          })}
+          value=""
+          onChange={() => {}}
           required
           className="url_input peer"
           />
