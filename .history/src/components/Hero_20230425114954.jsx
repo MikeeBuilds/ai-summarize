@@ -23,8 +23,8 @@ const Hero = () => {
         </span>
       </h1>
       <h2 className="desc">
-        Simplify your reading with Summize, built from a open-source article summarizer that
-        transforms lenghty articles into clear, concise summaries.
+        Simplify your reading with Summize, built from an open-source article summarizer that
+        transforms lenghty articles into clear concise summaries
          
       </h2>
     </header>
